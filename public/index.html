@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suma de matrices</title>
+  </head>
+  <body>
+    <h1>Suma de matrices</h1>
+
+    <form id="matrixForm">
+      <!-- Formulario para ingresar las matrices -->
+      <label for="filas1">Filas de la matriz 1:</label>
+      <input type="number" id="filas1" name="filas1" /><br />
+      <!-- Input para las filas de la matriz 1 -->
+      <label for="columnas1">Columnas de la matriz 1:</label>
+      <input type="number" id="columnas1" name="columnas1" /><br />
+      <!-- Input para las columnas de la matriz 1 -->
+      <div id="matrix1"></div>
+      <!-- Div para mostrar los inputs de la matriz 1 -->
+
+      <label for="filas2">Filas de la matriz 2:</label>
+      <input type="number" id="filas2" name="filas2" /><br />
+      <!-- Input para las filas de la matriz 2 -->
+      <label for="columnas2">Columnas de la matriz 2:</label>
+      <input type="number" id="columnas2" name="columnas2" /><br />
+      <!-- Input para las columnas de la matriz 2 -->
+      <div id="matrix2"></div>
+      <!-- Div para mostrar los inputs de la matriz 2 -->
+      <br />
+
+      <input
+        type="button"
+        value="Generar matrices"
+        onclick="generarMatrices()"
+      />
+      <input type="button" value="Sumar matrices" onclick="enviarMatrices()" />
+      <!-- Botón para sumar las matrices -->
+    </form>
+
+    <div id="result"></div>
+    <!-- Div para mostrar el resultado de la suma de matrices -->
+
+    <script src="client.js"></script>
+    <!-- Termina el bloque de script de JavaScript -->
+  </body>
+</html>
